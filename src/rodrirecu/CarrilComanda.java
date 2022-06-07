@@ -2,7 +2,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
 package rodrirecu;
 
 /**
@@ -10,7 +9,7 @@ package rodrirecu;
  * @author Usuario
  */
 public class CarrilComanda {
- Comanda carril[] = new Comanda [10];
+    Comanda carril[] = new Comanda [10];
     int ncomandas;
     Comanda servidas [] = new Comanda[10];
     int servida = 0;
@@ -24,9 +23,9 @@ public class CarrilComanda {
         }
     }
 
-    public void añadirComanda() {
+    public void anadirComanda() {
         this.ncomandas++;
-        int beber = (int) Math.round((Math.random() * 4) + 1)
-        this.carril[i] = new Comanda(beber,"Hamburguesa",1);
+        int beber = (int) Math.round((Math.random() * 4) + 1);
+        this.carril[ncomandas] = new Comanda(beber,"Hamburguesa",1);
     }
 }
