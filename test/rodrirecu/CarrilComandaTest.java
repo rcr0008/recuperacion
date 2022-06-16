@@ -28,5 +28,22 @@ public class CarrilComandaTest {
         s.anadirComanda();
         assertEquals(5, s.ncomandas);
     }
+
+    @Test
+    public void testAdelantar() {
+        CarrilComanda a =new CarrilComanda(20);
+    
+    a.adelantar();
+    assertEquals(15, a.ncomandas);
+    }
+
+    
+    @Test
+    public void testRetrasar() {
+       CarrilComanda b =new CarrilComanda(20);
+    
+    b.retrasar();
+    assertEquals(15, b.ncomandas);
+    }
     
 }
